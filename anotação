@@ -1,0 +1,25 @@
+import string
+string.punctuation
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+
+// declarando string
+texto = 'Alice foi atrás do coelho, mas não o encontrou'
+// colocando para minusculo
+texto = texto.lower()
+//retirar virgula
+texto = texto.replace(',', ' ')
+//colocar todas as palavras do texto em uma lista
+texto = texto.split()
+//criando biblioteca
+dic = {}
+mandando percorrer o texto
+>>> for p in texto:
+// contar se a palavra está no texto
+	if p not in dic:
+		dic[p] = 1
+	else:
+// somar se a palavra está duas vezes no texto             
+		dic[p] += 1
+
+//incluindo mais texto
+texto = 'alice caiu no buraco muito profundo'.split()

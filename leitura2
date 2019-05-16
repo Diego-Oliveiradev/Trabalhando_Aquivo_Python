@@ -1,0 +1,22 @@
+//abrindo o arquivo
+arq = open('nome.txt')
+//carregando o arquivo e jogando para uma variável
+texto = arq.read()
+// colocando as palavras da string para minuscula
+texto = texto.lower()
+// importando a class string
+import string
+for para retirar a pontuação e caracter especial
+for c in string.punctuation:
+    texto = texto.replace(c, ' ')
+//preparando para colocar em um dicionário    
+texto = texto.split()
+//declarando o dicionario
+dic = {}
+// for para contar quantas vezes uma palavra está no texto 
+for p in texto:
+    if p not in dic:
+        dic[p] = 1
+    else:
+        dic[p] += 1
+print ('Na poesia aparece %s vezes a palavra se' %dic['se'])        
